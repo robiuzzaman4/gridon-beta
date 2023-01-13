@@ -133,7 +133,7 @@ a {
         max-width: 720px;
     }
     .stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .stats .ratings{
         justify-content: center;
@@ -147,12 +147,6 @@ a {
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
-    }
-    .stats {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .stats .ratings, .reviews{
-        justify-content: center;
     }
     .feature {
         grid-template-columns: repeat(3, 1fr);
