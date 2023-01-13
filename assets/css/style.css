@@ -1,0 +1,129 @@
+/* VARIABLES */
+:root {
+    --purple-50: #faf5ff;
+    --purple-800: hsl(271, 58%, 37%);
+    --purple-900: hsl(271, 58%, 17%);
+    --purple-200: #e9d5ff;
+    --purple-300: #d8b4fe;
+
+    --gray-900: #111827;
+
+    --liner-gradient-1: linear-gradient(var(--purple-200), var(--purple-900));
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BASE */
+body {
+    font-family: 'Cairo', sans-serif;
+    color: var(--purple-900);
+    background-color: var(--purple-50);
+}
+
+/* RE-USEABLE STYLE START */
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+}
+.h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.paragraph {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.btn {
+    padding: .5em 1em;
+    border-radius: .5em;
+    background-color: var(--purple-300);
+    font-weight: 600;
+}
+/* RE-USEABLE STYLE START */
+
+/* NAV STYLE START */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.nav-brand .nav-logo {
+    height: 2.5em;
+    width: 2.5em;
+    background: var(--liner-gradient-1);
+    border-radius: .25em;
+}
+.nav-brand .nav-text {
+    font-size: 2em;
+    font-weight: 700;
+}
+.nav .btn-github {
+    font-size: 2em;
+    color: var(--gray-900);
+}
+/* NAV STYLE END */
+
+
+/* HERO STYLE START */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-items: center;
+    text-align: center;
+    padding-inline: 15em;
+}
+
+/* HERO STYLE END */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575.98px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+@media screen and (max-width: 768.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+    .hero {
+        padding-inline: 0;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 1399.98px) {
+    .container {
+        max-width: 1320px;
+    }
+}
