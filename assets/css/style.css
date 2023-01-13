@@ -26,6 +26,7 @@ body {
 /* RE-USEABLE STYLE START */
 a {
     text-decoration: none;
+    color: inherit;
 }
 .container {
     max-width: 1140px;
@@ -39,7 +40,8 @@ a {
     line-height: 1.5;
 }
 .paragraph {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.5;
     font-weight: 400;
     opacity: 0.8;
 }
@@ -85,6 +87,7 @@ a {
     grid-template-columns: 1fr;
     gap: 1em;
     justify-items: center;
+    align-items: center;
     text-align: center;
     padding-inline: 15em;
 }
