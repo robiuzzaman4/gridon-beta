@@ -29,7 +29,7 @@ a {
     color: inherit;
 }
 .container {
-    max-width: 1140px;
+    max-width: 520px;
     width: 100%;
     margin: 0 auto;
     padding: 2em;
@@ -39,9 +39,13 @@ a {
     font-weight: 500;
     line-height: 1.5;
 }
+.h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 1.25;
+}
 .paragraph {
     font-size: 1em;
-    line-height: 1.5;
     font-weight: 400;
     opacity: 0.8;
 }
@@ -49,7 +53,7 @@ a {
     padding: .5em 1em;
     border-radius: .5em;
     background-color: var(--purple-300);
-    font-weight: 600;
+    font-weight: 700;
 }
 /* RE-USEABLE STYLE START */
 
@@ -76,7 +80,7 @@ a {
 }
 .nav .btn-github {
     font-size: 2em;
-    color: var(--gray-900);
+    /* color: var(--gray-900); */
 }
 /* NAV STYLE END */
 
@@ -86,46 +90,66 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    padding-inline: 15em;
+    justify-items: flex-start
 }
-
 /* HERO STYLE END */
 
+/* STATS STYLE START */
+.stats {
+    padding-block: 4em;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    /* place-items: center; */
+    /* justify-items: center; */
+}
+.stats .ratings, .reviews {
+    display: grid;
+    gap: .25em;
+}
+/* STATS STYLE END */
 
 
-
-
-
-
-
-@media screen and (max-width: 575.98px) {
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
     .container {
         max-width: 540px;
     }
-
 }
-@media screen and (max-width: 768.98px) {
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stats .ratings, .reviews{
+        justify-content: center;
+    }
 }
-@media screen and (max-width: 991.98px) {
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
-    .hero {
-        padding-inline: 0;
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 1199.98px) {
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
 }
-@media screen and (max-width: 1399.98px) {
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
     .container {
         max-width: 1320px;
     }
